@@ -26,6 +26,7 @@ Certaines fonctionnalités citées ci dessous ont peut-être déjà été implé
 - Le jeu détecte les alignements de trois cookies (voire plus) et cela à la verticale ou à l'horizontale.
 - Le jeu détecte également les "doubles alignements" c'est à dire lorsque le déplacement d'un même cookie crée un alignement à la fois vertical et horizontal. 
 - Une fois les alignements repérés, les cookies alignés sont supprimés de la grille (plus d'image, plus de type).
+- Pour qu'un alignement déjà présent sur la grille (lorsque le jeu est lancé) soit detecté, il est nécessaire de déplacer un cookie sur la ligne ou la colonne de cet alignement. En bref, au lancement du jeu, les cookies déjà alignés ne sont pas supprimé directement, mais en quelques déplacements, tout sera réglé. C'est un choix, je préférais faire comme cela (vérifier les alignement par ligne et par colonne une fois en jeu et pas avant)
 
 ### Fonctionnalités externes
 - Pour chaque alignement réalisé, le score du joueur augmente, et cela exponentiellement: 3pt pour 3 cookies alignés, 7 (3+4) pour 4 cookies alignés, 12 (3+4+5) pour 5 cookies...etc. On arrive plus facilement à de gros score, c'est plus satisfaisant...
